@@ -16,29 +16,49 @@
         		<a href="http://www.unoesc.edu.br" target="_blank"><img src="Imagens/Logo_Unoesc.png" height="20%" width="20%"/></a>
         
         </div>
-        <div align="center">
-        	<form class="navbar-form navbar_my" role="search">
-        	<div class="form-group">
-        		<input type="text" class="form-control" placeholder="O que você procura?">
-        	</div>
-        		<button type="submit" class="btn btn-default">Procurar</button>
-      		</form>
-        </div>
     </div>
 	</header>
-    <nav>
-        <div align="center" class="my_color">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Vagas de Empregos</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Fórum</a></li>
-            </ul>
-         </div>
-     </nav>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cursos <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Sistemas de Informação</a></li>
+            <li><a href="#">Engenharia da Computação</a></li>
+            <li><a href="#">Estrutura</a></li>
+          </ul>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Vagas de Empregos</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Fórum</a></li>
+        </li>
+      </ul>
+      <div align="right">
+      	<form class="navbar-form navbar-right" role="search">
+        	<div class="form-group">
+        <input type="text" class="form-control" placeholder="O que você procura?">
+        	</div>
+        <button type="submit" class="btn btn-default">Procurar</button>
+      	</form>
+   	 </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
      <br><br>
      <section>
          <div align="center">
@@ -68,6 +88,6 @@
 		</div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="Home/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
