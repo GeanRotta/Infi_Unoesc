@@ -15,11 +15,11 @@
       <ul class="nav navbar-nav">
         <li <?php if ($pagina=="Home"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Home'; ?>">Home</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cursos <span class="caret"></span></a>
+          <a href="<?php echo $link.'?p=Cursos';?>" class="dropdown-toggle" data-toggle="dropdown">Cursos <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="<?php echo $link.'?p=Cursos/SIS'; ?>">Sistemas de Informação</a></li>
-            <li><a href="<?php echo $link.'?p=Cursos/ENG'; ?>">Engenharia da Computação</a></li>
-            <li><a href="<?php echo $link.'?p=Cursos/INF_EST'; ?>">Infraestrutura dos Cursos</a></li>
+            <li <?php if ($pagina=="Cursos/SIS"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Cursos/SIS'; ?>">Sistemas de Informação</a></li>
+            <li <?php if ($pagina=="Cursos/ENG"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Cursos/ENG'; ?>">Engenharia da Computação</a></li>
+            <li <?php if ($pagina=="Cursos/INF_EST"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Cursos/INF_EST'; ?>">Infraestrutura dos Cursos</a></li>
           </ul>
           <li <?php if ($pagina=="Eventos"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Eventos';?>">Eventos</a></li>
           <li <?php if ($pagina=="Vagas_de_Emprego"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Vagas_de_Emprego';?>">Vagas de Empregos</a></li>
