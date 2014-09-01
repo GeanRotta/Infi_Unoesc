@@ -1,7 +1,7 @@
 ﻿<!-- Arquivo index php para paginas inf unoesc -->
 <?php
 include_once("var.php");
-include_once("header.php");
+
 if(isset($_GET['p'])){
 $p=	$_GET['p'];
 }else{$p='Home';}
@@ -11,6 +11,7 @@ if ( empty($p) ){
 	} else {
 		$pagina = $p;
 	}
+include_once("header.php");
 include_once("navbar.php");
 ?>
 
