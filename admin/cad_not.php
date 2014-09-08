@@ -1,5 +1,5 @@
 <?php 
-	include("../conecta.php");
+	include("conecta.php");
 ?>
 <html>
         <form class="form-horizontal">
