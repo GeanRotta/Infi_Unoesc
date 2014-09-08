@@ -44,7 +44,7 @@
   		<div class="page-header">
   			<h1><small></small></h1>
             <div class="logo_unoesc">
-        		<a href="http://www.unoesc.edu.br" target="_blank"><img src="Imagens/Logo_Unoesc.png" height="15%" width="20%"/></a>
+        		<a href="http://www.unoesc.edu.br" target="_blank"><img src="Imagens/Logo_Unoesc.png" width="20%"/></a>
         
         </div>
     </div>
