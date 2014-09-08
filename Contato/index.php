@@ -9,14 +9,20 @@ $destino = "tiago.zonta@unoesc.edu.br";
 	$email = $_POST['email'];
 	$assunto = $_POST['assunto'];
 	$mensagem = $_POST['msg'];
-	if(mail($destino,$assunto,$mensagem,"From: $nome, E-mail: $email")){?>
+   $enviado = mail($destino,$assunto,$mensagem,"From: $nome, E-mail: $email");
+	if($enviado){
+   $erro = "null"?>
 	  <div class="alert alert-success" role="alert">E-mail enviado com sucesso!</div>
 	<?php
-    }else{?>
+    }else{
+    $erro = "1"?>
 	  <div class="alert alert-danger" role="alert">Erro ao enviar E-mail!</div>
 	<?php
 	}
-  }
+   require("conecta.php");
+   $sql = "insert into contatos(nome, email, assunto, mensagen, erro) values ('$nome', '$email','$assunto','$mensagem', $erro)";
+   $result = mysql_query($sql,$conn);
+   }
 
 ?>
 
