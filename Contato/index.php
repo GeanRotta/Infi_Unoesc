@@ -23,6 +23,7 @@ $destino = "tiago.zonta@unoesc.edu.br";
 
 <!-- codigo php acima e tals-->
 <!-- Arquivo index php para paginas inf unoesc -->
+<div align="center">
 <form class="form-horizontal" method="post" action="">
     <fieldset>
     
@@ -75,3 +76,4 @@ $destino = "tiago.zonta@unoesc.edu.br";
     
     </fieldset>
 </form>
+</div>

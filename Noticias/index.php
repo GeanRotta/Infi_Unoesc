@@ -18,13 +18,13 @@
 			  </h4>
 			</div>
 			<div id="<?php echo $collapse ?>" class="panel-collapse collapse">
-			  <div class="panel-body">
-				<?php echo"$linha[descricao]"; ?>
+			  <div class="panel-body" align="justify">
+				<?php echo"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$linha[descricao]"; ?>
 			  </div>
 			</div>
 		  </div>
         </div>
-		  
+		  &nbsp;
 	<?php
 		$collapse = $collapse + 1;
 		}
