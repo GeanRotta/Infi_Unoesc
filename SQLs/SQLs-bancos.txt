@@ -1,0 +1,1 @@
+Arquivo destinado ao compartilhamentos dos sqls utilizados na implantação dos bancos utilizados no portal
