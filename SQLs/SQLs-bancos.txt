@@ -1,1 +1,18 @@
 Arquivo destinado ao compartilhamentos dos sqls utilizados na implantação dos bancos utilizados no portal
+
+tabela para o sistema de noticias: 
+
+create database cad_noticias;
+
+CREATE TABLE IF NOT EXISTS `noticias` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `titulo` varchar(200) NOT NULL, 
+ `descricao` longtext NOT NULL,
+ `data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ `imagem` longtext NOT NULL,
+ `video` longtext NOT NULL,
+      PRIMARY KEY (`id`) ) 
+      ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+      
+      
+
