@@ -1,13 +1,13 @@
 <a href="<?php echo $caminho."?p=show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
-<form class="form-horizontal">
+ <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Cadastrar Eventos</legend>
+<legend>Editar Eventos</legend>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="name">Nome do evento: </label>  
+  <label class="col-md-4 control-label" for="name">Nome do Evento: </label>  
   <div class="col-md-4">
   <input id="name" name="name" placeholder="Nome" class="form-control input-md" type="text">
     
@@ -25,7 +25,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="data">Data do Evento</label>  
+  <label class="col-md-4 control-label" for="data">Data do evento</label>  
   <div class="col-md-4">
   <input id="data" name="data" placeholder="Que dia será o evento?" class="form-control input-md" type="text">
     
@@ -61,7 +61,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="enviar"></label>
   <div class="col-md-8">
-    <button id="enviar" name="enviar" class="btn btn-primary">Cadastrar Evento</button>
+    <button id="enviar" name="enviar" class="btn btn-primary">Atualizar Evento</button>
     <button id="limpar" name="limpar" class="btn btn-default">Limpar!</button>
   </div>
 </div>

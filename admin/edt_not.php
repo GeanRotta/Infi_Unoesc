@@ -1,12 +1,12 @@
-<?php 
+<a href="<?php echo $caminho."?p=show_notice"?>"><button class="btn btn-primary">Voltar</button></a><br/>
+ <?php 
 	include("conecta.php");
 ?>
-<a href="<?php echo $caminho."?p=show_notice"?>"><button class="btn btn-primary">Voltar</button></a> <br/> 
-   <form class="form-horizontal">
+        <form class="form-horizontal">
         	<fieldset>
         
         <!-- Form Name -->
-        		<legend>Cadastrar Notícias</legend>
+        		<legend>Editar Notícias</legend>
         
         <!-- Text input-->
         			<div class="form-group">
@@ -46,7 +46,7 @@
         			<div class="form-group">
         				<label class="col-md-4 control-label" for="Enviar"></label>
         					<div class="col-md-8">
-        						<button id="Enviar" name="Enviar" class="btn btn-primary">Cadastrar Notícia</button>
+        						<button id="Enviar" name="Enviar" class="btn btn-primary">Atualizar Notícia</button>
         						<button id="Limpar" name="Limpar" class="btn btn-default">Limpar</button>
         					</div>
         			</div>

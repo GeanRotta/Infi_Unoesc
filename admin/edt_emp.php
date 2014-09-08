@@ -1,9 +1,8 @@
-<a href="<?php echo $caminho."?p=show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
-<form class="form-horizontal">
+ <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Cadastrar Vaga de Emprego</legend>
+<legend>Editar Vagas de Emprego</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -16,7 +15,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="numvagas">Número de vagas:</label>  
+  <label class="col-md-4 control-label" for="numvagas">Número de Vagas:</label>  
   <div class="col-md-4">
   <input id="numvagas" name="numvagas" placeholder="Nº de vagas" class="form-control input-md" type="text">
     
@@ -52,7 +51,7 @@
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="descricao">Descrição da vaga:</label>
+  <label class="col-md-4 control-label" for="descricao">Descrição da Vaga:</label>
   <div class="col-md-4">                     
     <textarea class="form-control" id="descricao" name="descricao"></textarea>
   </div>
@@ -68,7 +67,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email_contato">E-mail para contato</label>  
+  <label class="col-md-4 control-label" for="email_contato">E-mail para Contato</label>  
   <div class="col-md-4">
   <input id="email_contato" name="email_contato" placeholder="E-mail" class="form-control input-md" type="text">
     
@@ -88,7 +87,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="enviar"></label>
   <div class="col-md-8">
-    <button id="enviar" name="enviar" class="btn btn-primary">Cadastrar/Atualizar</button>
+    <button id="enviar" name="enviar" class="btn btn-primary">Atualizar Vaga</button>
     <button id="limpar" name="limpar" class="btn btn-default">Limpar!</button>
   </div>
 </div>
