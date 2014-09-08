@@ -13,6 +13,22 @@ CREATE TABLE IF NOT EXISTS `noticias` (
  `video` longtext NOT NULL,
       PRIMARY KEY (`id`) ) 
       ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
       
       
+
+formulario de contatos:
+
+create database form_contatos;
+
+CREATE TABLE contatos(
+nome varchar( 200 ) NOT NULL ,
+email varchar( 200 ) NOT NULL ,
+assunto varchar( 100 ) NOT NULL ,
+mensagen longtext NOT NULL ,
+data_envio timestamp NOT NULL default CURRENT_TIMESTAMP ,
+erro int
+)
+
+
 
