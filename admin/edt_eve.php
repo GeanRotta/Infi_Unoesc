@@ -1,12 +1,12 @@
 <a href="<?php echo $caminho."?p=show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
- <form class="form-horizontal">
+ <form class="form-horizontal" method="post" action="">
 <fieldset>
 
 <!-- Form Name -->
 <legend>Editar Eventos</legend>
 
 <!-- Text input-->
-<div class="form-group" method="post" action="">
+<div class="form-group">
   <label class="col-md-4 control-label" for="name">Nome do Evento: </label>  
   <div class="col-md-4">
   <input id="name" name="name" placeholder="Nome" class="form-control input-md" type="text">

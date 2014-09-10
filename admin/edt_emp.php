@@ -1,11 +1,11 @@
- <form class="form-horizontal">
+ <form class="form-horizontal" method="post" action="">
 <fieldset>
 
 <!-- Form Name -->
 <legend>Editar Vagas de Emprego</legend>
 
 <!-- Text input-->
-<div class="form-group" method="post" action="">
+<div class="form-group">
   <label class="col-md-4 control-label" for="vaga">Vaga/Cargo:</label>  
   <div class="col-md-4">
   <input id="vaga" name="vaga" placeholder="Vaga" class="form-control input-md" type="text">
