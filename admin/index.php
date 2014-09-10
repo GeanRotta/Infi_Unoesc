@@ -19,8 +19,11 @@ if ( empty($p) ){
 } else {
 		$pagina = $p;
 	}
-
 require('header.php');
+if($pagina!="login"){
+require('navbar.php');
+}
+
 ?>
 <section>
 

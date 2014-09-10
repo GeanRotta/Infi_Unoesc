@@ -1,6 +1,11 @@
-<div>
+
+<br/>
+<br/>
+<div align="center">
    <form class="form-horizontal"  method="post" action="">
    <fieldset>
+   <br/>
+   <legend>Faça login para continuar para a área do administrador!</legend>
    <br/><br/><br/>
 
    <!-- Text input-->
@@ -24,7 +29,7 @@
 <!-- Button (Double) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="loga"></label>
-  <div class="col-md-8">
+  <div class="col-md-4">
     <button id="loga" name="loga" class="btn btn-primary">Entrar</button>
     <button id="trocasenha" name="trocasenha" class="btn btn-default">Esqueci minha senha</button>
   </div>
