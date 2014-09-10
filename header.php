@@ -30,7 +30,9 @@
 	 case "Contato":
 	 $pg = "Fale Conosco!";
 	 break;	
-		
+	 case "developers":
+	 $pg = "Desenvolvedores";
+	 break;
 		
 	}
 	
