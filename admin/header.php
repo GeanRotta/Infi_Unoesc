@@ -36,7 +36,8 @@
                 <li <?php if ($pagina=="show_events"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_events';?>">Eventos</a></li>
                 <li <?php if ($pagina=="show_vagas"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_vagas';?>">Vagas de Empregos</a></li>
                 <li <?php if ($pagina=="show_notice"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Notícias</a></li>
-                <li <?php if ($pagina=="show_mail"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_mail'; ?>">E-mails Não Recebidos</a></li>
+                <li <?php if ($pagina=="show_mail"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_mail'; ?>">E-mails</a></li>
+                <li class="navbar-right"><a href="<?php echo $caminho.'?p=logout'; ?>" >Sair</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

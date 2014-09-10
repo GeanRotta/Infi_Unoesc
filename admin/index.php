@@ -15,8 +15,13 @@ require('header.php');
 ?>
 <section>
 
-<?php include("$pagina.php") ?>
-
+<?php 
+if($pagina=="logout"){
+   header("location:../index.php");
+}else{
+   include("$pagina.php");
+}
+?>
 </section>
 
 <?php
