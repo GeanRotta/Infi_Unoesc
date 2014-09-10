@@ -37,6 +37,7 @@
                 <li <?php if ($pagina=="show_vagas"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_vagas';?>">Vagas de Empregos</a></li>
                 <li <?php if ($pagina=="show_notice"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Notícias</a></li>
                 <li <?php if ($pagina=="show_mail"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_mail'; ?>">E-mails</a></li>
+                <li <?php if ($pagina=="show_user"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_user'; ?>">Usuários</a></li>
                 <li class="navbar-right"><a href="<?php echo $caminho.'?p=logout'; ?>" >Sair</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->

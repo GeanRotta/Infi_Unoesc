@@ -1,7 +1,7 @@
 <div>
    <form class="form-horizontal"  method="post" action="">
    <fieldset>
-   <br/><br/><br/>
+   <br/><br/><br/><br/><br/>
 
    <!-- Text input-->
    <div class="form-group">
@@ -34,7 +34,8 @@
    </fieldset>
    </form>
 </div>
-
+<br/><br/><br/><br/><br/>
+<p align="center"><a href="<?=$link.'?p=Forum/Cadastro'?>">Não sou cadastrado!</a></p>
 <?php
 
 

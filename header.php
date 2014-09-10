@@ -29,7 +29,13 @@
 	 break;
 	 case "Contato":
 	 $pg = "Fale Conosco!";
-	 break;	
+	 break;
+    case "Forum":
+	 $pg = "Acesso ao Fórum";
+	 break;
+    case "Forum/Cadastro":
+	 $pg = "Cadastre-se";
+	 break;     
 	 case "developers":
 	 $pg = "Desenvolvedores";
 	 break;
