@@ -3,10 +3,10 @@ $caminho = "http://localhost/docs/Infi_Unoesc/admin/";
 
 if(isset($_GET['p'])){
 $p=	$_GET['p'];
-}else{$p='show_notice';}
+}else{$p='login';}
 
 if ( empty($p) ){
-		$pagina = "show_notice";
+		$pagina = "login";
 	} else {
 		$pagina = $p;
 	}
@@ -14,6 +14,7 @@ if ( empty($p) ){
 require('header.php');
 ?>
 <section>
+
 <?php include("$pagina.php") ?>
 
 </section>

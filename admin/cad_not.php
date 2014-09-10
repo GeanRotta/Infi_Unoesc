@@ -2,7 +2,7 @@
 	include("conecta.php");
 ?>
 <a href="<?php echo $caminho."?p=show_notice"?>"><button class="btn btn-primary">Voltar</button></a> <br/> 
-   <form class="form-horizontal">
+   <form class="form-horizontal" method="post" action="">
         	<fieldset>
         
         <!-- Form Name -->

@@ -6,7 +6,7 @@
 <legend>Cadastrar Eventos</legend>
 
 <!-- Text input-->
-<div class="form-group">
+<div class="form-group" method="post" action="">
   <label class="col-md-4 control-label" for="name">Nome do evento: </label>  
   <div class="col-md-4">
   <input id="name" name="name" placeholder="Nome" class="form-control input-md" type="text">

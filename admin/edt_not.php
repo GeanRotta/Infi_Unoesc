@@ -2,7 +2,7 @@
  <?php 
 	include("conecta.php");
 ?>
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="post" action="">
         	<fieldset>
         
         <!-- Form Name -->

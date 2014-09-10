@@ -16,7 +16,13 @@ include_once("navbar.php");
 ?>
 
 <section>
-<?php  include("$pagina/index.php"); ?>
+<?php 
+if($pagina=='admin'){
+   header("location:".$link."$pagina/index.php");
+}else{
+   include("$pagina/index.php"); 
+}
+?>
 </section>
 
 <?php
