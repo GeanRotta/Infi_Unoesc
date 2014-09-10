@@ -23,7 +23,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li <?php if ($pagina=="show_notice"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Home</a></li>
+                <li <?php if ($pagina=="show_home"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_home'; ?>">Home</a></li>
                 
                 <li class="dropdown">
                    <a href="<?php echo $link.'?p=Cursos';?>" class="dropdown-toggle" data-toggle="dropdown">Cursos <span class="caret"></span></a>
@@ -36,6 +36,7 @@
                 <li <?php if ($pagina=="show_events"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_events';?>">Eventos</a></li>
                 <li <?php if ($pagina=="show_vagas"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_vagas';?>">Vagas de Empregos</a></li>
                 <li <?php if ($pagina=="show_notice"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Notícias</a></li>
+                <li <?php if ($pagina=="show_mail"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_mail'; ?>">E-mails Não Recebidos</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
