@@ -20,6 +20,8 @@
 			<div id="<?php echo $collapse ?>" class="panel-collapse collapse">
 			  <div class="panel-body" align="justify">
 				<?php 
+               echo'<span style="text-aling:center;"><h4> <a href="?p=Empregos/edt_emp&id='.$linha['id'].'">Editar</a>|<a href="?p=Empregos/apaga&id='.$linha['id'].'"> Excluir </a></h4></span><br/>';
+               echo"Vaga numero: $linha[id]<br/><br/><br/><br/>";
                echo"Vaga: $linha[vaga]<br/><br/>";
                echo"Nº de Vagas: $linha[numvagas]<br/><br/>";
                echo"Empresa: $linha[empresa]<br/><br/>";
@@ -39,5 +41,6 @@
 	<?php
 		$collapse = $collapse + 1;
 		}
+      mysql_close();
 	?>
 </html>
