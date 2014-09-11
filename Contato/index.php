@@ -9,7 +9,8 @@ $destino = "tiago.zonta@unoesc.edu.br";
 	$email = $_POST['email'];
 	$assunto = $_POST['assunto'];
 	$mensagem = $_POST['msg'];
-   $enviado = mail($destino,$assunto,$mensagem,"From: $nome, E-mail: $email");
+   $de = "<".$email.">".$nome;
+   $enviado = mail($destino,$assunto,$mensagem,$de);
 	if($enviado){
    $erro = "null"?>
 	  <div class="alert alert-success" role="alert">E-mail enviado com sucesso!</div>
@@ -29,7 +30,7 @@ $destino = "tiago.zonta@unoesc.edu.br";
 
 <!-- codigo php acima e tals-->
 <!-- Arquivo index php para paginas inf unoesc -->
-<div align="center">
+<div>
 <form class="form-horizontal" method="post" action="">
     <fieldset>
     
@@ -49,7 +50,7 @@ $destino = "tiago.zonta@unoesc.edu.br";
         <div class="form-group">
           <label class="col-md-4 control-label" for="email">E-mail:</label>  
           <div class="col-md-4">
-          <input id="email" name="email" placeholder="Digite seu e-mail" class="form-control input-md" required="" type="text">
+          <input id="email" name="email" placeholder="Digite seu e-mail" class="form-control input-md" required="" type="email">
           <span class="help-block">example@site.com</span>  
           </div>
         </div>
