@@ -31,4 +31,24 @@ erro int
 )
 
 
+base para as vagas de empregos.. mesmo banco que noticias
+
+CREATE TABLE IF NOT EXISTS `empregos` 
+( 
+    `id` int(11) NOT NULL AUTO_INCREMENT, 
+    `vaga` varchar(70) NOT NULL,
+    `numvagas` varchar(10) NOT NULL,
+    `empresa` varchar(50) NOT NULL,
+    `salario` varchar(50),
+    `escolaridade` varchar(50),
+    `descricao` longtext NOT NULL,
+    `info_adicional` longtext NOT NULL,
+    `contato_mail` varchar(120),
+    `contato_fone` varchar(20),
+    `logo` longtext,
+    `data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`) 
+) 
+ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 
+
 

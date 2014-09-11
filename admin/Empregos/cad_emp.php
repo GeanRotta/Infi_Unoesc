@@ -1,5 +1,6 @@
+
 <a href="<?php echo $caminho."?p=Empregos/show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
-<form class="form-horizontal" method="post" action="">
+<form class="form-horizontal" method="post" action="?p=Empregos/cadastra">
 <fieldset>
 
 <!-- Form Name -->
@@ -88,7 +89,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="enviar"></label>
   <div class="col-md-8">
-    <button id="enviar" name="enviar" class="btn btn-primary">Cadastrar/Atualizar</button>
+    <button id="enviar" name="enviar" class="btn btn-primary">Cadastrar</button>
     <button id="limpar" name="limpar" class="btn btn-default">Limpar!</button>
   </div>
 </div>
