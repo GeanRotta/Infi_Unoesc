@@ -25,11 +25,11 @@
                      <li <?php if ($pagina=="Cursos/INF_EST"){echo "class=\"active\" ";}?>><a href="<?php echo $link.'?p=Cursos/INF_EST'; ?>">Infraestrutura dos Cursos</a></li>
                    </ul>
                  </li>
-                <li <?php if ($pagina=="show_events"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_events';?>">Eventos</a></li>
-                <li <?php if ($pagina=="show_vagas"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_vagas';?>">Vagas de Empregos</a></li>
-                <li <?php if ($pagina=="show_notice"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Notícias</a></li>
+                <li <?php if ($pagina=="show_events"||$pagina=="edt_eve"||$pagina=="cad_eve"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_events';?>">Eventos</a></li>
+                <li <?php if ($pagina=="show_vagas"||$pagina=="edt_emp"||$pagina=="cad_emp"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_vagas';?>">Vagas de Empregos</a></li>
+                <li <?php if ($pagina=="show_notice"||$pagina=="edt_not"||$pagina=="cad_not"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_notice'; ?>">Notícias</a></li>
                 <li <?php if ($pagina=="show_mail"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_mail'; ?>">E-mails</a></li>
-                <li <?php if ($pagina=="show_user"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_user'; ?>">Usuários</a></li>
+                <li <?php if ($pagina=="show_user"||$pagina=="edt_usr"){echo "class=\"active\" ";}?>><a href="<?php echo $caminho.'?p=show_user'; ?>">Usuários</a></li>
                 <li class="navbar-right"><a href="<?php echo $caminho.'?p=logout'; ?>" >Sair</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
