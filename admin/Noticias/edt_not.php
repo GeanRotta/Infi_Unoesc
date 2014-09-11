@@ -1,4 +1,4 @@
-<a href="<?php echo $caminho."?p=show_notice"?>"><button class="btn btn-primary">Voltar</button></a><br/>
+<a href="<?php echo $caminho."?p=Noticias/show_notice"?>"><button class="btn btn-primary">Voltar</button></a><br/>
  <?php 
 	include("conecta.php");
 ?>

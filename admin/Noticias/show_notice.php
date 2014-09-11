@@ -1,4 +1,4 @@
-<a href="<?php echo $caminho."../?p=cad_not"?>"><button class="btn btn-primary">Cadastrar</button></a><br/>
+<a href="<?php echo $caminho."?p=Noticias/cad_not"?>"><button class="btn btn-primary">Cadastrar</button></a><br/>
 <?php
     include ("../conecta.php");
 ?>

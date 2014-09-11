@@ -1,4 +1,4 @@
-<a href="<?php echo $caminho."?p=show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
+<a href="<?php echo $caminho."?p=Eventos/show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
 <form class="form-horizontal" method="post" action="">
 <fieldset>
 
