@@ -5,7 +5,7 @@
         $query = mysql_query($SQL);
         if(mysql_affected_rows($conn)> 0){
             echo "<script>alert('News apagada com sucesso!')</script>";
-            echo "<script>window.location = 'show_notice.php';</script>";
+            header("location:http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice#");
         }
     }
 ?>
