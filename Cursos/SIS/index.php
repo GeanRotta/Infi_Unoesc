@@ -6,7 +6,7 @@
                 </div>
             <div class="panel-body">
             	<div align="center">
-            		<a href="#"><img src="Imagens/Sistemas_Informacao.jpg" width="70%" /></a>
+            		<a href="#"><img src="Imagens/LOGO_CURSO_SIS_2.png" width="70%" /></a>
                 </div>
             	<h2 align="center">O Curso</a></h2>
             	<h4 align="justify">
@@ -15,17 +15,13 @@
                 <h2 align="center">Mercado de Trabalho</a></h2>
             	<h4 align="justify">
                 	O profissional que domina as tecnologias da informação e comunicação pode optar por diferentes caminhos: desenvolver e analisar sistemas, gerenciar o desenvolvimento, a tecnologia e a infraestrutura da informação, gerenciar sistemas e equipes de trabalho, prestar consultoria em desenvolvimento e análise de sistemas e modelagem de dados de uma empresa, entre outros. Pode atuar em empresas públicas, privadas ou abrir o próprio negócio.
-                </h4>
-                <h2 align="center">Informações</a></h2>
-            	<h4 align="justify">
-                	<h3 align="left">Coordenador</h3>
-                    	Tiago Zonta
-                        <a href="#">tiago.zonta@unoesc.edu.br</a>
-                    <h3 align="left">Duração</h3>
-                    	9 Fases
-                    <h3 align="left">Mensalidade:</h3>
-                    	Valor do Crédito: R$ 31.96
-						*O valor da mensalidade corresponde ao valor unitário do crédito multiplicado pela quantidade de créditos que você cursar.
+                </h4><br /><br />
+                 <h2 align="center">Informações</h2>
+            	<h4 align="left">
+                	<h3 align="left">Coordenador:</h3><br>
+                    	<h4 align="left">Tiago Zonta<br><br>
+                        E-mail: <a>tiago.zonta@unoesc.edu.br</a>
+                        </h4>
                 </h4>
             </div>
             </div>

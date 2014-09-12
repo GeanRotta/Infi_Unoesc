@@ -10,12 +10,12 @@
   				<!-- Wrapper for slides -->
   			<div class="carousel-inner">
   			  <div class="item active">
-      			<img src="Imagens/banner_site_virtual_l_extensao_ead.png" alt="...">
+      			<img src="Imagens/LOGO_CURSO_ENG_COMP.jpg" alt="..." width="80%">
       				<div class="carousel-caption">
       				</div>
     		  </div>
     		  <div class="item" align="center">
-      			<img src="Imagens/banner_novo.jpg" alt="..." height="100%" width="100%">
+      			<img src="Imagens/LOGO_CURSO_SIS_2.png" alt="..."width="80%">
       			<div class="carousel-caption">
         			<h1 align="center"></h1>
         			<h3 align="center"></h3>

@@ -6,15 +6,22 @@
                 </div>
             <div class="panel-body">
             	<div align="center">
-            		<a href="#"><img src="Imagens/4_laboratorio_de_informatica.jpg" width="70%" /></a>
+            		<a href="#"><img src="Imagens/LOGO_CURSO_ENG_COMP.jpg" width="70%" /></a>
                 </div>
-            	<h2 align="center"><a href="http://localhost/docs/Infi_Unoesc/?p=Cursos/ENG"> Engenharia da Computação </a></h2>
+            	<h2 align="center">O Curso</h2>
             	<h4 align="justify">
                 	Este é o curso para quem tem fascínio por sistemas computacionais, podendo trabalhar com dispositivos eletrônicos (hardware) capazes de processar informações de acordo com um programa (software). A Unoesc forma um profissional com conhecimento em engenharia, especialmente em sistemas computacionais, capaz de planejar, projetar, desenvolver e implementar sistemas eletrônicos, integrando software e hardware para automação de sistemas em geral. 
             	</h4>
-                <h2 align="center"><a href="http://localhost/docs/Infi_Unoesc/?p=Cursos/SIS"> Sistemas de Informação </a></h2>
-                <h4 align="justify">
-                	Este é o curso para quem quer criar soluções com base na tecnologia da informação. Essa escolha leva o aluno ao domínio dos sistemas de hardware, software, dados e procedimentos das redes de computadores de uma organização.  O profissional planeja e organiza os processos que envolvem as informações das empresas. E, além da construção de softwares, poderá planejar, gerenciar e controlar infraestruturas das Tecnologias da Informação e Comunicação (TIC) das organizações.   O curso forma um profissional focado na gestão, no desenvolvimento, na utilização e na avaliação de tecnologias de informação e comunicação aplicadas nas organizações.
+                <h2 align="center">Mercado de Trabalho</h2>
+            	<h4 align="justify">
+                O profissional pode trabalhar em diversas áreas da computação, na área de sistemas computacionais, de equipamentos, programas e inter-relações. Pode atuar em empresas do setor de tecnologia da informação, indústrias de computadores, periféricos, sistemas embarcados, telecomunicações e áreas, como planejamento e gestão de projetos computacionais. O aluno formado também pode trabalhar com a automação de processos industriais e computacionais e em laboratórios de pesquisa científica e tecnológica.  O profissional pode ter a própria empresa, trabalhar na iniciativa pública ou privada, ou, ainda, prestar consultoria.
+                </h4><br /><br />
+                <h2 align="center">Informações</h2>
+            	<h4 align="left">
+                	<h3 align="left">Coordenador:</h3><br>
+                    	<h4 align="left">Tiago Zonta<br><br>
+                        E-mail: <a>tiago.zonta@unoesc.edu.br</a>
+                        </h4>
                 </h4>
             </div>
             </div>
