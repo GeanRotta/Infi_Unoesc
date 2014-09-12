@@ -1,4 +1,4 @@
-
+<?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
 <a href="<?php echo $caminho."?p=Empregos/show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
 <form class="form-horizontal" method="post" action="?p=Empregos/cadastra">
 <fieldset>
@@ -96,3 +96,6 @@
 
 </fieldset>
 </form>
+<?php 
+ //  }
+?>

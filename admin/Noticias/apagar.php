@@ -1,4 +1,5 @@
 <?php
+//if(isset($_SESSION['adm'])){ 
     include "../conecta.php";
     if(is_numeric($_GET["id"])){
         $SQL = "DELETE FROM noticias WHERE id = ".$_GET["id"];
@@ -8,4 +9,5 @@
             header("location:http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice#");
         }
     }
+//}
 ?>

@@ -2,7 +2,7 @@
 <br/>
 <br/>
 <div align="center">
-   <form class="form-horizontal"  method="post" action="">
+   <form class="form-horizontal"  method="post" action="?p=login">
    <fieldset>
    <br/>
    <legend>Faça login para continuar para a área do administrador!</legend>
@@ -41,6 +41,19 @@
 </div>
 
 <?php
+if(isset($_POST['loga'])){
+   session_start();
+   $user=$_POST['user'];
+   $key=$_POST['password'];
+   if($user=="UserAdm"&&$key=="S&Nh@Adm!n"){   
+      echo"login foi feito.. essa merda nao quer funcionar";
+      $_SESSION['adm'] = $user;
+      header("location:$caminho"."index.php");
+   }else{
+   
+      echo'<div class="alert alert-danger" role="alert">Usuário/Senha Incorreto! Tente novamente!</div>';
+   }
 
+}
 
 ?>

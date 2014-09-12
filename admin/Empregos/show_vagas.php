@@ -1,3 +1,4 @@
+<?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
 <a href="<?php echo $caminho."?p=Empregos/cad_emp"?>"><button class="btn btn-primary">Cadastrar</button></a><br/>
 <br/>
 <!-- Arquivo index php para paginas inf unoesc -->
@@ -43,4 +44,6 @@
 		}
       mysql_close();
 	?>
-</html>
+<?php 
+//}
+?>

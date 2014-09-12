@@ -1,3 +1,4 @@
+<?php// if(isset($_SESSION['adm'])){ ?>
 <a href="<?php echo $caminho."?p=Noticias/cad_not"?>"><button class="btn btn-primary">Cadastrar</button></a><br/>
 <?php
     include ("conecta.php");
@@ -24,3 +25,5 @@
                     </ul>
                 </fieldset>
  </div>
+ 
+ <?php //} ?>

@@ -1,3 +1,4 @@
+<?php // if(isset($_SESSION['adm'])){ ?>
 <a href="<?php echo $caminho."?p=Noticias/show_notice"?>"><button class="btn btn-primary">Voltar</button></a><br/>
 <?php
     include("conecta.php");
@@ -104,3 +105,6 @@
         	</fieldset>
         </form>
 
+<?php 
+//   }
+?>

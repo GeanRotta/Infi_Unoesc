@@ -1,34 +1,36 @@
 <?php
 $caminho = "http://localhost/docs/Infi_Unoesc/admin/";
-
 if(isset($_GET['p'])){
 $p=$_GET['p'];
 }else{
-   //if( /*sessao nao existe*/ ){
-      $p='login';
+   //if(isset($_SESSION['adm'])){
+      $p='Noticias/show_notice';
    //}else{
-   //   $p='show_home';
+     // $p='login';
    //}
 }
 if ( empty($p) ){
-  //if(/*sessao nao existe*/){
-   $pagina='login';
+  //if(isset($_SESSION['adm'])){
+   $pagina='Noticias/show_notice';
   //}else{
-  // $pagina='show_home';
-  //}
+   //$pagina='login';
+// }
 } else {
 		$pagina = $p;
 	}
-require('header.php');
-if($pagina!="login"){
-require('navbar.php');
-}
+include('header.php');
+//echo $_SESSION['adm']?"sessao":"essa porra ta bugada";
+//f(isset($_SESSION['adm'])){
+include('navbar.php');
+//}
 
 ?>
+
 <section>
 
 <?php 
 if($pagina=="logout"){
+   //unset($_SESSION['adm']);
    header("location:../index.php");
 }else{
    include("$pagina.php");

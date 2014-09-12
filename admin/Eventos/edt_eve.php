@@ -1,3 +1,4 @@
+<?php// if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
 <a href="<?php echo $caminho."?p=Eventos/show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
  <form class="form-horizontal" method="post" action="">
 <fieldset>
@@ -68,3 +69,8 @@
 
 </fieldset>
 </form>
+
+
+<?php
+ //}
+ ?>
