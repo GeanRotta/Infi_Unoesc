@@ -1,9 +1,51 @@
 <?php 
 //if(isset($_SESSION['adm'])){ 
-	include("conecta.php");
 ?>
-<a href="<?php echo $caminho."?p=Noticias/show_notice"?>"><button class="btn btn-primary">Voltar</button></a> <br/> 
-   <form class="form-horizontal" method="post" action="">
+<?php
+    include("conecta.php");
+    if(isset($_POST["Titulo"])){
+        $titulo = $_POST["Titulo"];
+        $conteudo = $_POST["Descricao"];
+		//$imagem = $_POST["Imagem"];
+		$video = $_POST["Video"];
+        if(($titulo == "") || ($conteudo == "")){
+            echo "Preencha as informações corretamente.";
+            exit;
+        }else {
+            $SQL = "INSERT INTO noticias (titulo, descricao, imagem, video)";
+            $SQL .= " VALUES('".$titulo."','".$conteudo."','','".$video."')";
+            $query = mysql_query($SQL);
+            
+            if(mysql_affected_rows($conn) > 0){
+                echo "<script>alert('News cadastrada com sucesso.');</script>";
+                echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
+                }
+            else{
+                    echo "<script>alert('Erro ao cadastrar a news!.');</script>";
+                    echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
+                }
+        }   
+    }
+?>
+
+<script type="text/javascript">
+            function validar(){
+                var msg = "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n";
+                if(document.getElementById("Titulo").value.length <= 0){
+                    msg += "Preencha o campo Título.\n";
+                }
+                if(document.getElementById("Descricao").value.length <= 0){
+                    msg += "Preencha o campo Descrição.\n";
+                }
+                if(msg != "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n")
+                {
+                    alert(msg);
+                    return false;
+                }
+            }
+        </script>  
+
+   <form class="form-horizontal" method="post" action="?p=Noticias/cad_not" onsubmit="return validar();">
         	<fieldset>
         
         <!-- Form Name -->

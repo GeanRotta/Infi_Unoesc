@@ -1,26 +1,26 @@
 <?php // if(isset($_SESSION['adm'])){ ?>
-<a href="<?php echo $caminho."?p=Noticias/show_notice"?>"><button class="btn btn-primary">Voltar</button></a><br/>
+
 <?php
     include("conecta.php");
     if(isset($_POST["Titulo"])){
         $titulo = $_POST["Titulo"];
         $conteudo = $_POST["Descricao"];
-		$imagem = $_POST["Imagem"];
+		//$imagem = $_POST["Imagem"];
 		$video = $_POST["Video"];
         if(($titulo == "") || ($conteudo == "")){
             echo "Preencha as informações corretamente.";
             exit;
         }else {
-            $SQL = "UPDATE noticias SET titulo = '".$titulo."', descricao = '".$conteudo."', data = '',imagem = '".$imagem."', video = '".$video."' WHERE id = ".$_GET["id"];
+            $SQL = "UPDATE noticias SET titulo = '".$titulo."', descricao = '".$conteudo."', imagem = '', video = '".$video."' WHERE id = ".$_GET["id"];
             $query = mysql_query($SQL);
             
             if(mysql_affected_rows($conn) > 0){
                 echo "<script>alert('News atualizada com sucesso.');</script>";
-                echo "<script>window.location = 'listar.php';</script>";
+                echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
                 }
             else{
                     echo "<script>alert('Erro ao atualizar a news!.');</script>";
-                    echo "<script>window.location = 'listar.php';</script>";
+                    echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
                 }
         }   
     }
@@ -28,10 +28,10 @@
 <script type="text/javascript">
             function validar(){
                 var msg = "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n";
-                if(document.getElementById("titulo").value.length <= 0){
+                if(document.getElementById("Titulo").value.length <= 0){
                     msg += "Preencha o campo Título.\n";
                 }
-                if(document.getElementById("descricao").value.length <= 0){
+                if(document.getElementById("Descricao").value.length <= 0){
                     msg += "Preencha o campo Descrição.\n";
                 }
                 if(msg != "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n")
@@ -51,7 +51,7 @@
                 
             }
         ?>  
-        <form class="form-horizontal" method="post" action="?p=Noticias/edt_not.php&id=<?php echo $_GET["id"]?>" onsubmit="return validar();">
+        <form name="frm_Cadastro" class="form-horizontal" method="post" action="?p=Noticias/edt_not&id=<?php echo $_GET["id"]?>" onsubmit="return validar();">
         	<fieldset>
         
         <!-- Form Name -->
