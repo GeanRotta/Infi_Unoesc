@@ -30,6 +30,12 @@ data_envio timestamp NOT NULL default CURRENT_TIMESTAMP ,
 erro int
 )
 
+//fazer esse comando no hostinger
+
+ALTER TABLE `contatos` ADD `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST ;
+
+//------------------------------------------------------------------------
+
 
 base para as vagas de empregos.. mesmo banco que noticias
 
