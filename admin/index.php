@@ -37,6 +37,8 @@ if($pagina=="logout"){
 <?php
 include('footer.php');
 }else{
-echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+   include("header.php");
+   echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+   include('footer.php');
 }
 ?>
