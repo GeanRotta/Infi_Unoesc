@@ -1,6 +1,7 @@
-<?php
-//if(isset($_SESSION['adm'])){ 
-    include "../conecta.php";
+﻿<?php
+
+if(isset($_SESSION['adm'])){ 
+    include ("../conecta.php");
     if(is_numeric($_GET["id"])){
         $SQL = "DELETE FROM noticias WHERE id = ".$_GET["id"];
         $query = mysql_query($SQL);
@@ -10,5 +11,9 @@
         }
     }
 	mysql_close();
-//}
+}else{
+   include("header.php");
+   echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+   include('footer.php');
+}
 ?>

@@ -1,28 +1,24 @@
 <?php
-$caminho = "http://localhost/docs/Infi_Unoesc/admin/";
-if(isset($_GET['p'])){
-$p=$_GET['p'];
-}else{
-   //if(isset($_SESSION['adm'])){
-      $p='Noticias/show_notice';
-   //}else{
-     // $p='login';
-   //}
-}
-if ( empty($p) ){
-  //if(isset($_SESSION['adm'])){
-   $pagina='Noticias/show_notice';
-  //}else{
-   //$pagina='login';
-// }
-} else {
-		$pagina = $p;
-	}
-include('header.php');
-//echo $_SESSION['adm']?"sessao":"essa porra ta bugada";
-//f(isset($_SESSION['adm'])){
-include('navbar.php');
-//}
+session_start();
+if($_SESSION == true){
+   
+   $caminho = "http://localhost/docs/Infi_Unoesc/admin/";
+   if(isset($_GET['p'])){
+   $p=$_GET['p'];
+   }else{
+         $p='Noticias/show_notice';
+   }
+   if ( empty($p) ){
+
+      $pagina='Noticias/show_notice';
+     
+   } else {
+         $pagina = $p;
+      }
+   include('header.php');
+
+   include('navbar.php');
+
 
 ?>
 
@@ -30,7 +26,7 @@ include('navbar.php');
 
 <?php 
 if($pagina=="logout"){
-   //unset($_SESSION['adm']);
+   unset($_SESSION['adm']);
    header("location:../index.php");
 }else{
    include("$pagina.php");
@@ -39,5 +35,10 @@ if($pagina=="logout"){
 </section>
 
 <?php
-include('footer.php')
+include('footer.php');
+}else{
+   include("header.php");
+   echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+   include('footer.php');
+}
 ?>
