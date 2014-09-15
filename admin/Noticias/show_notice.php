@@ -44,7 +44,7 @@
 	?> 
  <?php 
  	mysql_close();
-   else{
+   }else{
       include("header.php");
       echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
       include('footer.php');
