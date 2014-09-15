@@ -14,6 +14,8 @@
    }
    mysql_close();
    }else{
-echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
-}
+      include("header.php");
+      echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+      include('footer.php');
+   }
 ?>

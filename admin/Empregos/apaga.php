@@ -1,4 +1,4 @@
- <?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
+ <?php if($_SESSION['adm']==true ){ ?>
  <a href="<?php echo $caminho."?p=Empregos/show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
 <?php 
 
@@ -12,5 +12,9 @@
       echo'<div class="alert alert-danger" role="alert">Erro ao apagar vaga!</div>'; 
    }
    mysql_close();
- //  }
+  }else{
+      include("header.php");
+      echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+      include('footer.php');
+}
 ?>

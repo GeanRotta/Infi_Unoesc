@@ -1,4 +1,4 @@
-<?php // if(isset($_SESSION['adm'])){ ?>
+<?php if(isset($_SESSION['adm'])){ ?>
 
 <?php
     include("conecta.php");
@@ -106,5 +106,10 @@
         </form>
 
 <?php 
-//   }
+ mysql_close();
+  }else{
+      include("header.php");
+      echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+      include('footer.php');
+}
 ?>
