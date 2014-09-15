@@ -1,6 +1,7 @@
 <?php 
 	include("conecta.php");
 ?>
+
 <html>
 	<?php
 		$collapse = '1';

@@ -15,11 +15,11 @@
             $query = mysql_query($SQL);
             
             if(mysql_affected_rows($conn) > 0){
-                echo "<script>alert('News atualizada com sucesso.');</script>";
+                echo "<script>alert('Notícia atualizada com sucesso.');</script>";
                 echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
                 }
             else{
-                    echo "<script>alert('Erro ao atualizar a news!.');</script>";
+                    echo "<script>alert('Erro ao atualizar a Notícia!.');</script>";
                     echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Noticias/show_notice';</script>";
                 }
         }   

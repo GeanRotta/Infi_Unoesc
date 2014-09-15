@@ -1,6 +1,52 @@
 <?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
-<a href="<?php echo $caminho."?p=Empregos/show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
-<form class="form-horizontal" method="post" action="?p=Empregos/cadastra">
+<?php 
+if(isset($_POST['enviar'])){
+   include('conecta.php');
+   $vaga = $_POST['vaga'];
+   $numvaga = $_POST['numvagas'];
+   $empresa = $_POST['empresa'];
+   $salario = $_POST['salario'];
+   $escolaridade = $_POST['ensino'];
+   $descricao = $_POST['descricao'];
+   $info_mais = $_POST['adicionais'];
+   $mail = $_POST['email_contato'];
+   $fone = $_POST['fone_contato'];
+    if(($vaga == "") || ($empresa == "") || ($mail == "")){
+            echo "Preencha as informações corretamente.";
+            exit;
+        }else {$sql = "insert into empregos(vaga,numvagas,empresa,salario,escolaridade,descricao,info_adicional,contato_mail,contato_fone,logo) values
+          ('$vaga','$numvaga','$empresa','$salario','$escolaridade','$descricao','$info_mais','$mail','$fone',' ')";
+  		   $result = mysql_query($sql,$conn);
+		   if($result){
+      				echo "<script>alert('Emprego cadastrado com sucesso.');</script>";
+                	echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Empregos/show_vagas';</script>";   
+   				}else{
+      				echo "<script>alert('Erro ao cadastrar o emprego!.');</script>"; 
+					echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Empregos/show_vagas';</script>";
+   				}
+		}
+}
+?>
+<script type="text/javascript">
+            function validar(){
+                var msg = "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n";
+                if(document.getElementById("vaga").value.length <= 0){
+                    msg += "Preencha o campo Título.\n";
+                }
+                if(document.getElementById("empresa").value.length <= 0){
+                    msg += "Preencha o campo Contratante.\n";
+                }
+				 if(document.getElementById("email_contato").value.length <= 0){
+                    msg += "Preencha o campo de E-mail.\n";
+                }
+                if(msg != "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n")
+                {
+                    alert(msg);
+                    return false;
+                }
+            }
+        </script>  
+<form class="form-horizontal" method="post" action="?p=Empregos/cad_emp" onsubmit="return validar()">
 <fieldset>
 
 <!-- Form Name -->
@@ -97,5 +143,6 @@
 </fieldset>
 </form>
 <?php 
+	mysql_close();
  //  }
 ?>

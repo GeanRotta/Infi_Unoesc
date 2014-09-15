@@ -34,8 +34,6 @@
 <!-- Fim painel de banners -->
 
 
-<!-- corpo -->
-<br />
          <div align="center">
              <div class="panel panel-primary">
                 <div class="panel-heading">

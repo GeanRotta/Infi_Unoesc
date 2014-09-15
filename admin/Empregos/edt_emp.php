@@ -1,5 +1,57 @@
- <?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
- <a href="<?php echo $caminho."?p=Empregos/show_vagas"?>"><button class="btn btn-primary">Voltar</button></a><br/>
+ <?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){    
+ 	require('conecta.php');?>
+ <?php
+   if(isset($_POST['enviar'])){
+   include('conecta.php');
+   $id=$_GET['id'];
+   $vaga = $_POST['vaga'];
+   $numvaga = $_POST['numvagas'];
+   $empresa = $_POST['empresa'];
+   $salario = $_POST['salario'];
+   $escolaridade = $_POST['ensino'];
+   $descricao = $_POST['descricao'];
+   $info_mais = $_POST['adicionais'];
+   $mail = $_POST['email_contato'];
+   $fone = $_POST['fone_contato'];
+   if(($vaga == "") || ($empresa == "") || ($mail == "")){
+            echo "Preencha as informações corretamente.";
+            exit;
+        }else {
+			$sql = "update empregos set vaga='$vaga', numvagas='$numvaga', empresa='$empresa', salario='$salario', escolaridade='$escolaridade', descricao='$descricao',
+            info_adicional='$info_mais',contato_mail='$mail' ,contato_fone='$fone' ,logo=' ' where id=$id ";
+  			$result = mysql_query($sql,$conn);
+   				if($result){
+      				echo "<script>alert('Vaga atualizada com sucesso.');</script>";
+                	echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Empregos/show_vagas';</script>";   
+   				}else{
+      				echo "<script>alert('Erro ao atualizar a Vaga!.');</script>"; 
+					echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Empregos/show_vagas';</script>";
+   				}
+		}
+}
+?>
+ 
+ 
+ <script type="text/javascript">
+            function validar(){
+                var msg = "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n";
+                if(document.getElementById("vaga").value.length <= 0){
+                    msg += "Preencha o campo Título.\n";
+                }
+                if(document.getElementById("empresa").value.length <= 0){
+                    msg += "Preencha o campo Contratante.\n";
+                }
+				 if(document.getElementById("email_contato").value.length <= 0){
+                    msg += "Preencha o campo de E-mail.\n";
+                }
+                if(msg != "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n")
+                {
+                    alert(msg);
+                    return false;
+                }
+            }
+        </script> 
+ 
  <?php 
 	require("conecta.php");
    $id=$_GET['id'];   
@@ -8,7 +60,7 @@
 	$linha=array();
    $linha = mysql_fetch_array($resultado);
    ?>
- <form class="form-horizontal" method="post" action="?p=Empregos/edita&id=<?=$linha['id']?>">
+ <form class="form-horizontal" method="post" action="?p=Empregos/edt_emp&id=<?=$linha['id']?>" onsubmit="return validar()">
 <fieldset>
 
 <!-- Form Name -->
