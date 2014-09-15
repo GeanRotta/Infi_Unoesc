@@ -1,4 +1,5 @@
-<?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
+<?php
+ if($_SESSION['adm']==true){ ?>
 <!-- Arquivo index php para paginas inf unoesc -->
 <br/>
 <?php 
@@ -39,5 +40,7 @@
       mysql_close();
 	?>
 <?php 
-//}
+}else{
+echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+}
 ?>

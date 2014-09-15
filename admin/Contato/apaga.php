@@ -1,4 +1,5 @@
- <?php //if($_SESSION['adm']==true and $_SESSION['admkey']==true){ ?>
+ <?php 
+ if($_SESSION['adm']==true){ ?>
  <a href="<?php echo $caminho."?p=Contato/show_mail"?>"><button class="btn btn-primary">Voltar</button></a><br/>
 <?php 
 
@@ -12,5 +13,7 @@
       echo'<div class="alert alert-danger" role="alert">Erro ao apagar E-mail!</div>'; 
    }
    mysql_close();
- //  }
+   }else{
+echo'<div class="alert alert-danger" role="alert">Você não tem acesso a essa página!</div>';
+}
 ?>
