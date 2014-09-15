@@ -27,7 +27,7 @@
 				<html>
                 <span style="text-aling:center;">
                 <h4><a href="?p=Noticias/edt_not&id=<?=$exibir['id']?>">Editar </a>|
-                <a href="?p=Noticias/apagar&id=<?=$exibir['id']?>" onclick= 'return validar()' "> Excluir </a></h4></span><br/>
+                <a href="#" onclick="apagar('<?php echo $exibir["id"];?>','<?php echo $exibir["titulo"];?>')"> Excluir </a></h4></span><br/>
 				</html>
                <?php
                echo $exibir["descricao"]."<br><br>";

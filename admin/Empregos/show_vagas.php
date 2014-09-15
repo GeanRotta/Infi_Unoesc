@@ -2,6 +2,14 @@
 <a href="<?php echo $caminho."?p=Empregos/cad_emp"?>"><button class="btn btn-primary">Cadastrar</button></a><br/>
 <br/>
 <!-- Arquivo index php para paginas inf unoesc -->
+
+<script type="text/javascript" >
+     function apagar(id, desc){
+        if(window.confirm("Deseja realmente apagar este registro: " + desc))
+            window.location = 'Empregos/apaga.php?id=' + id;
+      }                
+</script> 
+
 <?php 
 	require("conecta.php");
 		$collapse = '1';
@@ -20,8 +28,10 @@
 			</div>
 			<div id="<?php echo $collapse ?>" class="panel-collapse collapse">
 			  <div class="panel-body" align="justify">
-				<?php 
-               echo'<span style="text-aling:center;"><h4> <a href="?p=Empregos/edt_emp&id='.$linha['id'].'">Editar</a>|<a href="?p=Empregos/apaga&id='.$linha['id'].'"> Excluir </a></h4></span><br/>';
+              <span style="text-aling:center;"><h4> <a href="?p=Empregos/edt_emp&id='.$linha['id'].'">Editar</a> |
+              <a href="#" onclick="apagar('<?php echo $linha["id"];?>','<?php echo $linha["vaga"];?>')"> Excluir </a></h4></span>
+              <br/>';
+			   <?php 
                echo"Vaga: $linha[vaga]<br/><br/>";
                echo"Nº de Vagas: $linha[numvagas]<br/><br/>";
                echo"Empresa: $linha[empresa]<br/><br/>";
