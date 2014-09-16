@@ -23,6 +23,7 @@ $destino = "tiago.zonta@unoesc.edu.br";
    require("conecta.php");
    $sql = "insert into contatos(nome, email, assunto, mensagen, erro) values ('$nome', '$email','$assunto','$mensagem', $erro)";
    $result = mysql_query($sql,$conn);
+    mysql_close();
    }
 
 ?>
