@@ -29,9 +29,9 @@
 			<div id="<?php echo $collapse ?>" class="panel-collapse collapse">
 			  <div class="panel-body" align="justify">
               <span style="text-aling:center;">
-			  <h4> <a href="?p=Empregos/edt_emp&id=<?=$linha['id']?>">Editar </a>|
+			  <h4> <a href="?p=Empregos/edt_emp&id=<?=$linha['id']?>">Editar </a> |
               <a href="#" onclick="apagar('<?php echo $linha["id"];?>','<?php echo $linha["vaga"];?>')"> Excluir </a></h4></span>
-              <br/>';
+              <br/>
 			   <?php 
                echo"Vaga: $linha[vaga]<br/><br/>";
                echo"Nº de Vagas: $linha[numvagas]<br/><br/>";
