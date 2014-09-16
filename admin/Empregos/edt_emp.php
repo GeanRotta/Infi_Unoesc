@@ -60,7 +60,7 @@
 	$linha=array();
    $linha = mysql_fetch_array($resultado);
    ?>
- <form class="form-horizontal" method="post" action="?p=Empregos/edt_emp&id=<?=$linha['id']?>" onsubmit="return validar()">
+ <form class="form-horizontal" method="post" action="?p=Empregos/edt_emp&id=<?php echo"$linha[id]"?>" onsubmit="return validar()">
 <fieldset>
 
 <!-- Form Name -->
