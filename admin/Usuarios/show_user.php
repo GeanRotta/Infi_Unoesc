@@ -22,7 +22,7 @@ require_once("conectausr.php");
          echo"<td>$linha[usuario]</td>";
          echo"<td>$linha[nome]</td>";
          echo"<td>$linha[nivel]</td>";
-         echo"<td><a href='?p=Usuarios/edt_usr&id_e=$linha[id]&t=usr'>Editar</a> | <a href='?p=Usuarios/apaga&id_d=$linha[id]&t=usr'>Excluir</a></td>";
+         echo"<td><a href='?p=Usuarios/edt_usr&id_e=$linha[id]'>Editar</a> | <a href='?p=Usuarios/apaga&id_d=$linha[id]&t=usr'>Excluir</a></td>";
          echo"</tr>";
      }
   ?>

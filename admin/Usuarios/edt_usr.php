@@ -5,6 +5,10 @@
 <?php
 require_once("conectausr.php");
 
+
+
+
+
 mysql_close
 }
 ?>
