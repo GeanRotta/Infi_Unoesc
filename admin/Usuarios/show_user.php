@@ -1,7 +1,5 @@
 <?php if($_SESSION['adm']== true){ 
 require_once("conectausr.php");
- 
- 
 ?>
 <div align="center">
 <div class="panel panel-default" >
