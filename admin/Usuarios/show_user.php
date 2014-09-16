@@ -54,7 +54,7 @@ require_once("conectausr.php");
          echo"<td>$linha[usuario]</td>";
          echo"<td>$linha[nome]</td>";
          echo"<td>$linha[curso]</td>";
-         echo"<td><a href='?p=Usuarios/edt_usr&id_e=$linha[id]&t=cad'>Aceitar</a> | <a href='?p=Usuarios/apaga&id_d=$linha[id]&t=cad'>Excluir</a></td>";
+         echo"<td><a href='?p=Usuarios/cad_usr&id_e=$linha[id]'>Aceitar</a> | <a href='?p=Usuarios/apaga&id_d=$linha[id]&t=cad'>Excluir</a></td>";
          echo"</tr>";
      }
   ?>
