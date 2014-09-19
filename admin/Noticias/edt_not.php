@@ -41,7 +41,7 @@
                 }
             }
         </script>  
-			<?php
+		<?php
             //busca dados e atribui ao formulario
         		if(isset($_GET["id"])){
             		if(is_numeric($_GET["id"])){

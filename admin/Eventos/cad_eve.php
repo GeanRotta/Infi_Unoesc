@@ -1,6 +1,55 @@
 <?php if($_SESSION['adm']==true){ ?>
 <a href="<?php echo $caminho."?p=Eventos/show_events"?>"><button class="btn btn-primary">Voltar</button></a><br/>
-<form class="form-horizontal" method="post" action="">
+<?php
+    include("conecta.php");
+    if(isset($_POST["name"])){
+        $nome = $_POST["name"];
+        $local = $_POST["local"];
+		$data = $_POST["data"];
+		$url = $_POST["videos"];
+		//$imagem = $_POST["imagens"];
+		$descricao = $_POST["descricao"];
+        if(($nome == "") || ($local == "") || ($descricao == "")){
+            echo "Preencha as informações corretamente.";
+            exit;
+        }else {
+            $SQL = "INSERT INTO eventos (nome, local, data, video, imagem, descricao)";
+            $SQL .= " VALUES('$nome','$local','$data','$url','','$descricao')";
+            $query = mysql_query($SQL);
+            
+            if(mysql_affected_rows($conn) > 0){
+                echo "<script>alert('Evento cadastrado com sucesso.');</script>";
+                echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Eventos/cad_eve';</script>";
+                }
+            else{
+                    echo "<script>alert('Erro ao cadastrar o Evento!.');</script>";
+                    echo "<script>window.location = 'http://localhost/docs/Infi_Unoesc/admin/?p=Eventos/cad_eve';</script>";
+                }
+        }   
+    }
+?>
+
+<script type="text/javascript">
+            function validar(){
+                var msg = "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n";
+                if(document.getElementById("name").value.length <= 0){
+                    msg += "Preencha o campo Nome do evento.\n";
+                }
+                if(document.getElementById("local").value.length <= 0){
+                    msg += "Preencha o campo Local.\n";
+                }
+				if(document.getElementById("descricao").value.length <= 0){
+                    msg += "Preencha o campo Descricao.\n";
+                }
+                if(msg != "---------------- Erro ----------------\nPreencha o(s) seguinte(s) campo(s):\n-------------------------------------\n")
+                {
+                    alert(msg);
+                    return false;
+                }
+            }
+        </script>  
+
+<form class="form-horizontal" method="post" action="?p=Eventos/cad_eve" onsubmit="return validar();">
 <fieldset>
 
 <!-- Form Name -->
@@ -19,7 +68,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="local">Local/Hora</label>  
   <div class="col-md-4">
-  <input id="local" name="local" placeholder="Hora e local do evento" class="form-control input-md" type="text">
+  <input id="local" name="local" placeholder="Local do evento e hora" class="form-control input-md" type="text">
     
   </div>
 </div>

@@ -33,16 +33,16 @@
               <a href="#" onclick="apagar('<?php echo $linha["id"];?>','<?php echo $linha["vaga"];?>')"> Excluir </a></h4></span>
               <br/>
 			   <?php 
-               echo"Vaga: $linha[vaga]<br/><br/>";
-               echo"Nº de Vagas: $linha[numvagas]<br/><br/>";
-               echo"Empresa: $linha[empresa]<br/><br/>";
-               echo"Salário: $linha[salario]<br/><br/>";
-               echo"Nível de escolaridade: $linha[escolaridade]<br/><br/>";
-               echo"Descricao: $linha[descricao]<br/><br/>";
-               echo"Informações adicionais: $linha[info_adicional]<br/><br/>";
-               echo"Interessados entrar em contato atavés:<br/><br/>";
-               echo"E-mail: $linha[contato_mail]<br/>";
-               echo"Telefone(s): $linha[contato_fone]<br/>";
+               echo"<b>Vaga: </b> $linha[vaga]<br/><br/>";
+               echo"<b>Nº de Vagas: </b> $linha[numvagas]<br/><br/>";
+               echo"<b>Empresa: </b> $linha[empresa]<br/><br/>";
+               echo"<b>Salário: </b> $linha[salario]<br/><br/>";
+               echo"<b>Nível de escolaridade: </b> $linha[escolaridade]<br/><br/>";
+               echo"<b>Descricao: </b> $linha[descricao]<br/><br/>";
+               echo"<b>Informações adicionais: </b> $linha[info_adicional]<br/><br/>";
+               echo"<b>Interessados entrar em contato atavés: </b><br/><br/>";
+               echo"<b>E-mail: </b> $linha[contato_mail]<br/><br/>";
+               echo"<b>Telefone(s): </b> $linha[contato_fone]";
             ?>
 			  </div>
 			</div>
